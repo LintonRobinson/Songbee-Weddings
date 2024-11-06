@@ -1,0 +1,253 @@
+/******************************************
+/* BOX MODEL HACK
+/*******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* CLEAR FIX HACK
+/*******************************************/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* STYLE RESETS 
+/*******************************************/
+
+/* Remove all padding and margin, set font style */
+* {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove list item marker */
+ul , li {
+    list-style: none;
+}
+
+/* Remove underline from link */
+
+a {
+    text-decoration: none !important;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* General container styling */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* h1 font size, color */
+h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(55, 55, 55, 0.549);
+    
+}
+
+
+/* Hero subtext font size, color */
+.hero-subtext {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* White text */
+header * , .hero * {
+    color: white;
+}
+
+
+/******************************************
+/* NAV BAR
+/*******************************************/
+header {
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+    width: 100vw;
+    box-shadow: 0px -4px 3px 1px rgba(133,133,133,0.35);
+    background-color: rgba(0, 0, 0, 0.602);;
+
+}
+
+/* Nav tag styling */
+nav {
+    height: 100%;
+}
+
+/* Nav bar image styling */
+nav img {
+    display: block;
+    max-width: 125px;
+    width: auto;
+    height: auto;
+}
+
+/* Nav bar container styling */
+nav .container {
+    padding: 15px 50px;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Nav bar right styling */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Nab bar ul styling */
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+/* Nav bar How It Works anchor (link) right border */
+ul li:first-child {
+    border-right: solid white 2px;
+    padding-right: 15px ;
+}
+
+/******************************************
+/* HERO SECTION
+/*******************************************/   
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    top: -92.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hero content wrapper styling */
+.hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    width: 100vw;
+    min-height: 739px;
+}
+
+/* Hero subtext styling */
+.hero-content-wrapper span {
+    text-shadow: 2px 2px 5px rgba(55, 55, 55, 0.549);
+}
+
+/* Hero bottom text wrapper styling */
+.bottom-text-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 15px 20px;
+}
+/* Hero bottom text right styling (with image) */
+
+.bottom-text-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sound-on  {
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+/* Hero video styling */
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+}
+
+/******************************************
+/* UTILITY CLASSES
+/*******************************************/   
+
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #FFC982;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+
+.btn:hover {
+    display: inline-block;
+    border: 2px solid #FFC982;
+    background-color: #FFC982;
+    color: #444444;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+
+
+/* Hero button styling */
+
+.hero-content-wrapper .btn {
+    margin-top: 20px;
+    background-color: #ffc9823a;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.hero-content-wrapper .btn:hover {
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #FFC982;
+    background-color: #FFC982;
+    color: #444444;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+
+/* Gold text */
+.gold-text {
+    color: #FFC982;
+}
