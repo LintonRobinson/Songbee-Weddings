@@ -53,7 +53,6 @@ a {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 /******************************************
@@ -69,7 +68,13 @@ h1 {
     
 }
 
+h2 {
+    font-size: 1.5rem;
+}
 
+h3 {
+    font-size: 3rem;
+}
 /* Hero subtext font size, color */
 .hero-subtext {
     font-size: 1.2rem;
@@ -81,7 +86,12 @@ header * , .hero * {
     color: white;
 }
 
-
+h4 {
+    color: #FFC982;
+    display: inline-block;
+    align-self: start;
+    border-bottom: solid 2px #FFC982;
+}
 /******************************************
 /* NAV BAR
 /*******************************************/
@@ -91,7 +101,7 @@ header {
     top: 0px;
     width: 100vw;
     box-shadow: 0px -4px 3px 1px rgba(133,133,133,0.35);
-    background-color: rgba(0, 0, 0, 0.602);;
+    background-color: rgb(0, 0, 0);;
 
 }
 
@@ -199,6 +209,126 @@ video {
 }
 
 /******************************************
+/* WHO WE ARE SECTION
+/*******************************************/  
+
+.who-we-are .container  {
+    display: flex;
+}
+
+.who-we-are {
+    padding-bottom: 92.5px;
+}
+
+.who-we-are-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.who-we-are-right , .who-we-are-left {
+    width: 50%;
+    height: 320px;
+    padding: 0 20px;
+}
+
+.who-we-are-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.who-we-are-img-wrapper img  {
+    width: 30%;
+}
+
+.who-we-are-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.who-we-are-list-wrapper {
+    display: flex;
+    padding-left: 16px;
+    justify-content: start;
+    gap: 100px;
+}
+
+.who-we-are-list-wrapper * {
+    list-style: inside;
+}
+
+.who-we-are-left , .who-we-are-img-wrapper {
+    
+}
+
+
+/******************************************
+/* HOW IT WORKS SECTION
+/*******************************************/  
+
+.how-it-works {
+    padding: 100px 0;
+    background-image: url('/images/how\ it\ works\ background\ image.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+.how-it-works .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    /* border: #ffffff solid 2px;  */
+}
+
+.how-it-works-card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.how-it-works-card {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.how-it-works-card span {
+    font-size: 1.5rem;
+}
+
+.how-it-works-card p {
+    width: 300px;
+}
+
+.how-it-works-card-img {
+    width: 120px;
+    
+} 
+
+
+
+
+.idk {
+    height: 300px;
+    background-color: #FFC982;
+}
+
+
+
+
+/******************************************
 /* UTILITY CLASSES
 /*******************************************/   
 
@@ -251,3 +381,6 @@ video {
 .gold-text {
     color: #FFC982;
 }
+
+
+
