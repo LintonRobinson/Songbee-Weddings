@@ -14,25 +14,43 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="container">
-                <img src="/images/songbee - logo only.png" alt="Songbee Logo">
+                <a href="#">
+                    <img src="/images/songbee - logo only.png" alt="Songbee Logo">
+                </a>
+
                 <div class="nav-right">
+                    <img src="/images/hamburger-icon.png" alt="Hamburger Menu" class="hamburger-icon">
                     <ul>
                         <li>
-                            <a href="#">How It Works</a>
+                            <a href="#how-it-works">How It Works</a>
                         </li>
                         <li>
-                            <a href="#">FAQ</a>
+                            <a href="#faq">FAQ</a>
                         </li>
                     </ul>
-                    <a class="btn" href="#">Get Started</a>
+                    <a class="btn" href="#get-started">Get Started</a>
                 </div>
             </div>
-
         </nav>
+        <div class="full-screen-mobile-menu-wrapper full-screen-mobile-menu-wrapper-hidden">
+            <div class="nav-dropdown-mobile">
+                <ul>
+                    <li>
+                        <a href="#how-it-works">How It Works</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+                </ul>
+                <a class="btn" href="#get-started">Get Started</a>
+            </div>
+        </div>
     </header>
+
     <section class="hero">
         <div class="hero-content-wrapper">
             <video autoplay muted loop>
@@ -42,24 +60,24 @@
                 <br>
                 Our <span class="gold-text">Lyrics</span>
             </h1>
-            <span class="hero-subtext">Crafting <span class="gold-text">Custom Wedding Songs</span> for Wedding
+            <span class="hero-subtext">Crafting <span class="gold-text">Custom Songs</span> for Wedding
                 Videos</span>
-            <a class="btn" href="#">Get Started</a>
+            <a class="btn" href="#get-started">Get Started</a>
             <div class="bottom-text-wrapper">
                 <span>Credit: Chris Coyl Films</span>
                 <a href="#">Click for Sound <img class="sound-on" src="/images/Sound On.png" alt=""></a>
             </div>
         </div>
     </section>
-    <section class="who-we-are">
+    <section id="who-we-are" class="who-we-are">
         <div class="container">
             <div class="who-we-are-left">
-                <h4>Who We are</h4>
-                <h2>Songbee is a Custom Song For Wedding Videos Company</h2>
+                <div class="who-we-are-left-text-wrapper">
+                    <h4>Who We are</h4>
+                    <h3>We Create Custom Song For Wedding Videos</h2>
+                </div>
                 <div class="who-we-are-img-wrapper">
-                    <img src="/images/Songbee Icon.png" alt="">
-                    <img src="/images/Songbee Icon.png" alt="">
-                    <img src="/images/Songbee Icon.png" alt="">
+                    <img src="/images/songbee - no background.png" alt="">
                 </div>
             </div>
             <div class="who-we-are-right">
@@ -84,9 +102,9 @@
             </div>
         </div>
     </section>
-    <section class="how-it-works">
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h3>How It Works</h3>
+            <h2>How It Works</h2>
             <div class="how-it-works-card-wrapper">
                 <div class="how-it-works-card">
                     <img src="/images/card-img-1.png" alt="" class="how-it-works-card-img">
@@ -95,122 +113,158 @@
                 </div>
                 <div class="how-it-works-card">
                     <img src="/images/card-img-1.png" alt="" class="how-it-works-card-img">
-                    <span>Weddings</span>
+                    <span>Step 2:</span>
                     <p>Est sale definitiones id. Ut quo quem harum munere, eu labore voluptatum mei.</p>
                 </div>
                 <div class="how-it-works-card">
                     <img src="/images/card-img-1.png" alt="" class="how-it-works-card-img">
-                    <span>Weddings</span>
+                    <span>Step 3:</span>
                     <p>Est sale definitiones id. Ut quo quem harum munere, eu labore voluptatum mei.</p>
                 </div>
             </div>
+            <a href="#get-started" class="white-btn">Get Started</a>
         </div>
     </section>
-    <section class="sample-section">
+    <section id="sample-section" class="sample-section">
         <div class="container">
             <div class="sample-top-wrapper">
                 <div class="sample-top-text">
-                    <h4>Who We are</h4>
-                    <h2>Songbee is a Custom Song For Wedding Videos Company</h2>
+                    <h4>Our Work</h4>
+                    <h3>Transform Your Wedding Videos</h2>
                 </div>
-                <a href="#" class="btn">Get Started</a>
+                <a href="#get-started" class="gold-btn-small">Get Started</a>
             </div>
             <div class="before-after-wrapper">
-                <div class="before-wrapper">
-                    <span>Before:</span>
-                    <iframe
-                        src="https://player.vimeo.com/video/916252729?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        width="500" height="281" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        title="Courtney &amp; Tyler's Wedding at Terrain"></iframe>
-                    <img src="/images/Video Camera Icon.png" alt="Video Camera Icon">
+                <div class="before-after-inside-wrapper">
+                    <div class="before-text-wrapper">
+                        <span>Before Songbee:</span>
+                    </div>
+                    <div class="before-video-wrapper">
+                        <video src="/images/Hero Video_1.mp4" controls></video>
+                    </div>
+                    <img class="sample-section-before-icon" src="/images/Video Camera Icon.png" alt="Video Camera Icon">
                 </div>
-                <div class="after-wrapper">
-                    <span>After:</span>
-                    <iframe
-                        src="https://player.vimeo.com/video/916252729?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        width="500" height="281" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        title="Courtney &amp; Tyler's Wedding at Terrain"></iframe>
-                    <div class="after-img-wrapper">
-                        <img src="#" alt="Video Camera Icon">
-                        <img src="#" alt="Plus Icon">
-                        <img src="#" alt="Music Icon">
+                <div class="before-after-inside-wrapper">
+                    <div class="after-text-wrapper">
+                        <span>After Songbee:</span>
+                    </div>
+                    <div class="after-video-wrapper">
+                        <video src="/images/Hero Video_1.mp4" controls></video>
+                    </div>
+                    <div class="after-icon-wrapper">
+                        <img class="sample-section-after-icon" src="/images/Video Camera Icon.png"
+                            alt="Video Camera Icon">
+                        <img class="sample-section-after-icon" src="/images/Plus Icon1.png" alt="Video Camera Icon">
+                        <img class="sample-section-after-icon" src="/images/Music Note Icon.png"
+                            alt="Video Camera Icon">
                     </div>
                 </div>
             </div>
+            <a href="#get-started" class="gold-btn-large">Get Started</a>
+        </div>
+
         </div>
     </section>
     <section class="why-work-with-us">
         <div class="container">
-            <h3>Why Work With Us?</h3>
+            <div class="why-work-with-us-text-wrapper">
+                <span>Work With Us</span>
+                <h2>Why Work With Us?</h3>
+            </div>
             <div class="why-work-with-us-card-wrapper">
                 <div class="why-work-with-us-card">
-                    <img src="#" alt="">
-                    <span>Designed by experts</span>
-                    <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
-                        perfecting every single crate to make it an awesome learning & play experience for every kid.
-                    </p>
+                    <img src="/images/Wedding Image 2.png" alt="">
+                    <div class="why-work-with-us-card-text-wrapper">
+                        <span>Designed by experts</span>
+                        <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
+                            perfecting every single crate to make it an awesome learning & play experience for every
+                            kid.
+                        </p>
+                    </div>
                 </div>
                 <div class="why-work-with-us-card">
-                    <img src="#" alt="">
-                    <span>Designed by experts</span>
-                    <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
-                        perfecting every single crate to make it an awesome learning & play experience for every kid.
-                    </p>
+                    <img src="/images/Wedding Image 2.png" alt="">
+                    <div class="why-work-with-us-card-text-wrapper">
+                        <span>Designed by experts</span>
+                        <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
+                            perfecting every single crate to make it an awesome learning & play experience for every
+                            kid.
+                        </p>
+                    </div>
                 </div>
                 <div class="why-work-with-us-card">
-                    <img src="#" alt="">
-                    <span>Designed by experts</span>
-                    <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
-                        perfecting every single crate to make it an awesome learning & play experience for every kid.
-                    </p>
+                    <img src="/images/Wedding Image 2.png" alt="">
+                    <div class="why-work-with-us-card-text-wrapper">
+                        <span>Designed by experts</span>
+                        <p>We are a team of real-life educators, engineers, and rocket scientists. We spend 1,000+ hours
+                            perfecting every single crate to make it an awesome learning & play experience for every
+                            kid.
+                        </p>
+                    </div>
                 </div>
-                <a href="#" class="btn"></a>
             </div>
+            <a class="black-btn" href="#get-started">Get Started</a>
         </div>
     </section>
-    <section class="cta">
+    <section id="get-started" class="cta">
         <div class="container">
-            <h3>Getting started is easy!</h3>
+            <div class="cta-text-wrapper">
+                <h2>Getting started is easy!</h2>
+                <span>Complete This Form & Schedule a Call</span>
+            </div>
             <div class="get-started-wrapper">
                 <div class="get-started-step">
-                    <img src="#" alt="" class="get-started-number">
-                    <span>This is step 1</span>
-                </div>
-                <div class="get-started-step">
-                    <img src="#" alt="" class="get-started-number">
-                    <span>This is step 2</span>
-                </div>
-                <div class="get-started-step">
-                    <img src="#" alt="" class="get-started-number">
-                    <span>This is step 1</span>
+
+                    <div class="typeform" data-tf-live="01JCH434WEFM20EBNHVTWCC499"></div>
+                    <script src="//embed.typeform.com/next/embed.js"></script>
                 </div>
             </div>
-            <a href="#" class="btn"></a>
         </div>
     </section>
-    <section class="faq">
-        <div class="container">
-            <div class="faq-questions-wrapper">
-                <div class="faq-question">
+    <section id="faq" class="faq">
+        <h2>FAQ's</h2>
+        <div class="faq-wrapper">
+            <div class="faq-question-answer-wrapper">
+                <div class="faq-question-1">
                     <span>How does Songbee work, and what is included? </span>
-                    <img src="#" alt="Caret">
+                    <img class="faq-caret faq-caret-1" src="/images/Caret.png" alt="Caret">
                 </div>
-                <div class="faq-question">
-                    <span>How does Songbee work, and what is included? </span>
-                    <img src="#" alt="Caret">
+                <div class="faq-answer-1">
+                    <span>Songbee is an awesome company run by awesome people!</span>
                 </div>
-                <div class="faq-question">
+            </div>
+            <div class="faq-question-answer-wrapper">
+                <div class="faq-caret faq-question-2">
                     <span>How does Songbee work, and what is included? </span>
-                    <img src="#" alt="Caret">
+                    <img class="faq-caret faq-caret-2" src="/images/Caret.png" alt="Caret">
+                </div>
+                <div class="faq-answer-2">
+                    <span>Songbee is an awesome company run by awesome people!</span>
+                </div>
+            </div>
+            <div class="faq-question-answer-wrapper">
+                <div class="faq-question-3">
+                    <span>How does Songbee work, and what is included? </span>
+                    <img class="faq-caret faq-caret-3" src="/images/Caret.png" alt="Caret">
+                </div>
+                <div class="faq-answer-3">
+                    <span>Songbee is an awesome company run by awesome people!</span>
+                </div>
+            </div>
+            <div class="faq-question-answer-wrapper">
+                <div class="faq-question-4">
+                    <span>How does Songbee work, and what is included? </span>
+                    <img class="faq-caret faq-caret-4" src="/images/Caret.png" alt="Caret">
+                </div>
+                <div class="faq-answer-4">
+                    <span>Songbee is an awesome company run by awesome people!</span>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div class="footer-column-wrapper">
+            <div class="footer-about-us">
                 <h5>About Us</h5>
                 <div class="footer-column-content">
                     <p>We're Tilia, a team of photographers & videographers. Sed ut perspiciatis unde omnis iste natus
@@ -219,35 +273,41 @@
                 </div>
             </div>
             <div class="footer-column-wrapper">
-                <h5>Contact Us</h5>
-                <div class="footer-column-content">
-                    <a href="tel:+"><img src="#" alt="Phone Icon">1-211-111-1111</a>
-                    <a href="mailto:">hello@songbee.com</a>
+                <div class="footer-inside-wrapper">
+                    <h5>Contact Us</h5>
+                    <div class="footer-column-content">
+                        <a href="tel:+"><img src="#" alt="">+1-211-111-1111</a>
+                        <a href="mailto:">hello@songbee.com</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-column-wrapper">
-                <h5>Quick Links</h5>
-                <div class="footer-column-content">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Sample</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact</a>
+                <div class="footer-inside-wrapper">
+                    <h5>Quick Links</h5>
+                    <div class="footer-column-content">
+                        <a href="#">Home</a>
+                        <a href="#who-we-are">About</a>
+                        <a href="#sample-section">Samples</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-column-wrapper">
-                <h5>Follow</h5>
-                <div class="footer-column-content">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Vimeo</a>
+                <div class="footer-inside-wrapper">
+                    <h5>Follow</h5>
+                    <div class="footer-column-content">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Vimeo</a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-content-bottom">
-                <span>2024 © Songbee Designed by Linton Robinson</span>
             </div>
         </div>
+        <div class="footer-content-bottom">
+            <span>2024 © Songbee <em>Built/Designed by Linton Robinson</em></span>
+        </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
